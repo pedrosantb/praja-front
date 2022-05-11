@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="/static/css/login.css">
+
+    <title>Pra Ja - Login</title>
+</head>
+<body>
+    <section class="left">
+        <div class="container">
+            <img src="/static/img/cadastro.svg" alt="Homem entrando na porta">
+        </div>
+    </section>
+
+    <section class="main">
+        <div class="container">
+            <div class="logo">
+                <img src="/static/img/logo_praja_alpha.png" alt="logo pra ja envios">
+                <p>Realize seu cadastro para ter acesso à plataforma</p>
+            </div>
+
+            <form class="login" action="#" method="post">
+                <div class="form-control">
+                    <label for="user"> E-mail <br> 
+                    <input placeholder="Email" class="input" type="email" name="user" required>
+                    <i class="mail"><img src="/static/img/icons/email.svg" alt=""></i>
+                    </label>
+                </div>
+                
+                <div class="form-control">
+                    <label for="passwd2"> Senha <br> 
+                    <input placeholder="********" class="input" type="password" name="passwd2" required>
+                    <i class ="lock"><img src="/static/img/icons/lock.svg" alt=""></i>
+                    </label>
+
+                </div>
+
+                <div class="form-control">
+                    <label for="passwd"> Confirme sua senha <br> 
+                    <input placeholder="********" class="input" type="password" name="passwd" required>
+                    <i class ="lock"><img src="/static/img/icons/lock.svg" alt=""></i>
+                    </label>
+
+                </div>
+                
+                <div class="g-recaptcha captcha" data-sitekey="6LcaDOEcAAAAAMMMjj-8-BQorfN6X5DJIScfRuFz"></div>
+                
+                <button class="btn" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit' data-action='submit'>Cadastrar</button>
+
+            </form>
+
+            <div class="separador"></div>
+
+            <p>Já tem uma conta? <a href="/login/">Realize seu login</a></p>
+
+        </div>
+
+    </section>
+</body>
+</html>
